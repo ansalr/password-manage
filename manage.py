@@ -14,6 +14,7 @@ def load_key():
     file.close()
     return key
 
+
 password = input("what is passowrd? ")
 key = load_key()
 fer = Fernet(key)
@@ -34,7 +35,7 @@ def add():
 
 
 
-while True:
+while password == 'secure':
     mode = input("""To add password enter 'add' \nTo view old password enter 'view' \nTo quit enter 'q'\nEnter mode : """).lower()
 
     if mode == 'q':
@@ -47,3 +48,5 @@ while True:
     else:
         print("invalid mode !! ")
         continue
+else:
+    print("invalid password !!! ")
