@@ -1,5 +1,5 @@
 # password-manage
-It help to manage user password safe and secure
+It help to manage users password safe and secure
 
 
 library used :
